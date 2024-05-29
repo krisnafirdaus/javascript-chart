@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Anime.js</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <script>
+    anime({
+      targets: '.box',
+      translateX: 250,
+      duration: 2000,
+      easing: 'easeInOutQuad'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Berantai Anime.js</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <script>
+    anime({
+      targets: '.box',
+      translateX: 250,
+      delay: anime.stagger(100), // delay in milliseconds between each animation
+      duration: 2000,
+      easing: 'easeInOutQuad'
+    });
+  </script>
+</body>
+</html>
